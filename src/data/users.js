@@ -6,8 +6,7 @@ const users = [
     },
     {
       name: "Jane Smith",
-      attendance: "72%",
-      average: "3.7",
+      average: "3.7"
     },
     {
       name: "Bob Johnson",
