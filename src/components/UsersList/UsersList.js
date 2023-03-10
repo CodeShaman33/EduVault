@@ -1,20 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { users } from 'data/users';
+import UsersListItem from 'components/UserListItem/UsersListItem';
 
 const UsersList = () => (
     <div>
         <ul>
-            {users.map(({name, average, attendance}) =>
+            {users.map((userData) =>
             (
-                <li>
-                    <div>{average}</div>
-                <div>
-                    <p>{name}</p>
-                    <p>{attendance}</p> 
-                </div>
-                <button>X</button>
-                </li>
+                <UsersListItem userData = {userData}/>
             ))}
         </ul>
     </div>
