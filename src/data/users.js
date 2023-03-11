@@ -22,22 +22,8 @@ const users = [
       name: "Tom Jackson",
       attendance: "60%",
       average: "2.5",
-    },
-    {
-      name: "Samantha Lee",
-      attendance: "85%",
-      average: "3.8",
-    },
-    {
-      name: "Michael Chen",
-      attendance: "78%",
-      average: "3.5",
-    },
-    {
-      name: "Grace Kim",
-      attendance: "92%",
-      average: "3.9",
     }
+   
   ];
   
   export {users};
