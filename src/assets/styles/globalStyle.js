@@ -20,6 +20,10 @@ import { createGlobalStyle } from "styled-components";
         font-family: 'Montserrat', sans-serif;
 
     }
+
+    .hasBorder {
+        border: 1px solid black;
+    }
 `;
 
 export default GlobalStyle;
