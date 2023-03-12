@@ -21,7 +21,7 @@ const Root = () => (
   <ThemeProvider theme={theme}>
   <GlobalStyle />
   <Wrapper>
-    <UsersList />
+    <UsersList title = {"Users listen"}/>
   </Wrapper>
   </ThemeProvider>
   

@@ -23,9 +23,7 @@ const StyledButton = styled.button`
   }
 `;
 
-const alertMe = () => {
-  alert('You clicked the button!');
-}
+
 
 const Button = (props) => (
     <StyledButton {...props}>

@@ -4,7 +4,6 @@ import styled from "styled-components";
 import  Button from "components/atoms/button/button.js";
 import {Grade} from "components/atoms/grade/Grade.js";
 import { StyledInfo } from "components/atoms/StyledInfo/StyledInfo";
-import { showIndex } from "helpers/functions";
 
 const Wrapper = styled.div`
 display: flex;
@@ -36,14 +35,14 @@ position: relative;
 
 
 
-const UsersListItem = ({index, userData: { average, name, attendance = '0%' }}) => (
+const UsersListItem = ({deleteUser, index, userData: { average, name, attendance = '0%' }}) => (
   <Wrapper >
     <Grade value={average} >{average}</Grade>
     <StyledInfo>
       <p>{name}</p>
       <p>{attendance}</p>
     </StyledInfo> 
-    <Button onClick = {() => {showIndex(index)}}/>
+    <Button onClick = {() => deleteUser(name)}/>
   </Wrapper>
 );
 
