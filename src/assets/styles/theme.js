@@ -1,20 +1,22 @@
+export const theme = {
+  colors: {
+    white: "#FFFFFF",
+    lightGrey: "#F7F8FA",
+    grey: "#C0C7D6",
+    darkGrey: "#737C8E",
+    black: "#111111",
+    success: "#8FCB81",
+    error: "#FF8383",
+    warning: "#E1D888",
+    darkPurple: "#C0C7D6",
+    lightPurple: "#ECEFF7",
+  },
 
-
-export const theme  = {
-    colors: {
-        white: '#FFFFFF',
-        lightGrey: '#f7f8fa',
-        grey: '#757575',
-        black: '#111111',
-        succes: '#8FCB81',
-        error: '#cb8581',
-        warning: '#e1d888'
-    },
-
-    fontSize: {
-        small: '12px',
-        medium: '14px',
-        large: '16px'
-    }
-    
-}
+  fontSize: {
+    xxl: "34px",
+    xl: "24px",
+    l: "17px",
+    m: "12px",
+    s: "11px",
+  },
+};

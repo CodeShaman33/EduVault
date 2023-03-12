@@ -23,8 +23,12 @@ const StyledButton = styled.button`
   }
 `;
 
+const alertMe = () => {
+  alert('You clicked the button!');
+}
+
 const Button = (props) => (
-    <StyledButton>
+    <StyledButton {...props}>
         <DeleteIcon />
     </StyledButton>
 );

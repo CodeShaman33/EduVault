@@ -16,7 +16,7 @@ const users = [
     {
       name: "Alice Lee",
       attendance: "95%",
-      average: 3.9
+      average: 4.5
     },
     {
       name: "Tom Jackson",

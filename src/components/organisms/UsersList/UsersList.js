@@ -24,9 +24,9 @@ const StyledList = styled.ul`
 const UsersList = () => (
     <Wrapper>
         <StyledList>
-            {users.map((userData) =>
+            {users.map((userData, i) =>
             (
-                <UsersListItem userData = {userData}/>
+                <UsersListItem index = {i} userData = {userData}/>
             ))}
         </StyledList>
     </Wrapper>
