@@ -14,6 +14,10 @@ position: relative;
   margin-right: 40px;
 }
 
+${StyledInfo} {
+  font-style: bold;
+}
+
 & ${Button} {
   right: 20px;
 }
