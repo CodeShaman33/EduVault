@@ -9,6 +9,7 @@ import {theme} from 'assets/styles/theme'
 const Wrapper = styled.div`
   background-color: ${props => props.theme.colors.lightGray};
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;

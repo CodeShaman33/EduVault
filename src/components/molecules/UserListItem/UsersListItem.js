@@ -1,9 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styled from "styled-components";
-import  Button from "components/atoms/button/button.js";
 import {Grade} from "components/atoms/grade/Grade.js";
 import { StyledInfo } from "components/atoms/StyledInfo/StyledInfo";
+import DeleteButton from "components/atoms/DeleteButton/DeleteButton";
+
 
 const Wrapper = styled.div`
 display: flex;
@@ -14,17 +15,17 @@ position: relative;
   margin-right: 40px;
 }
 
-${StyledInfo} {
+& ${StyledInfo} {
   font-style: bold;
 }
 
-& ${Button} {
+& ${DeleteButton} {
   right: 20px;
 }
 
 
 
-&::after {
+&:not(:last-child)::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -46,7 +47,7 @@ const UsersListItem = ({deleteUser, index, userData: { average, name, attendance
       <p>{name}</p>
       <p>{attendance}</p>
     </StyledInfo> 
-    <Button onClick = {() => deleteUser(name)}/>
+    <DeleteButton onClick = {() => deleteUser(name)}/>
   </Wrapper>
 );
 
